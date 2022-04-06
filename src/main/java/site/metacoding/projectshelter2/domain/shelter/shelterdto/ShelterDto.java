@@ -25,9 +25,6 @@ public class ShelterDto {
     private String saveTrgtAnimal;
     private String careAddr;
     private String jibunAddr;
-    // private String lat;
-    // private String lng;
-    // private String dsignationDate;
     private String weekOprEtime;
     private String weekOprStime;
     private String weekCellEtime;
@@ -38,13 +35,18 @@ public class ShelterDto {
     private String weekendCellStime;
     private String closeDay;
     private String careTel;
-    // private String medicalCnt;
-    // private String quarabtineCnt;
-    // private String feedCnt;
-    // private String transCarCnt;
-    // private String dataStdDt;
-    // private Integer vetPersonCnt;
-    // private Integer specsPersonCnt;
-    // private Integer breedCnt;
-    // private Integer rnum;
+
 }
+// private String lat;
+// private String lng;
+// private String dsignationDate;
+
+// private String medicalCnt;
+// private String quarabtineCnt;
+// private String feedCnt;
+// private String transCarCnt;
+// private String dataStdDt;
+// private Integer vetPersonCnt;
+// private Integer specsPersonCnt;
+// private Integer breedCnt;
+// private Integer rnum;

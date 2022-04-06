@@ -1,0 +1,497 @@
+-----------------------------------com.example.Body.java-----------------------------------
+
+package com.example;
+
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("jsonschema2pojo")
+public class Body {
+
+@SerializedName("items")
+@Expose
+private Items items;
+@SerializedName("numOfRows")
+@Expose
+private Integer numOfRows;
+@SerializedName("pageNo")
+@Expose
+private Integer pageNo;
+@SerializedName("totalCount")
+@Expose
+private Integer totalCount;
+
+public Items getItems() {
+return items;
+}
+
+public void setItems(Items items) {
+this.items = items;
+}
+
+public Integer getNumOfRows() {
+return numOfRows;
+}
+
+public void setNumOfRows(Integer numOfRows) {
+this.numOfRows = numOfRows;
+}
+
+public Integer getPageNo() {
+return pageNo;
+}
+
+public void setPageNo(Integer pageNo) {
+this.pageNo = pageNo;
+}
+
+public Integer getTotalCount() {
+return totalCount;
+}
+
+public void setTotalCount(Integer totalCount) {
+this.totalCount = totalCount;
+}
+
+}
+-----------------------------------com.example.Example.java-----------------------------------
+
+package com.example;
+
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("jsonschema2pojo")
+public class Example {
+
+@SerializedName("response")
+@Expose
+private Response response;
+
+public Response getResponse() {
+return response;
+}
+
+public void setResponse(Response response) {
+this.response = response;
+}
+
+}
+-----------------------------------com.example.Header.java-----------------------------------
+
+package com.example;
+
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("jsonschema2pojo")
+public class Header {
+
+@SerializedName("resultCode")
+@Expose
+private String resultCode;
+@SerializedName("resultMsg")
+@Expose
+private String resultMsg;
+
+public String getResultCode() {
+return resultCode;
+}
+
+public void setResultCode(String resultCode) {
+this.resultCode = resultCode;
+}
+
+public String getResultMsg() {
+return resultMsg;
+}
+
+public void setResultMsg(String resultMsg) {
+this.resultMsg = resultMsg;
+}
+
+}
+-----------------------------------com.example.Item.java-----------------------------------
+
+package com.example;
+
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("jsonschema2pojo")
+public class Item {
+
+@SerializedName("careAddr")
+@Expose
+private String careAddr;
+@SerializedName("careNm")
+@Expose
+private String careNm;
+@SerializedName("careTel")
+@Expose
+private String careTel;
+@SerializedName("closeDay")
+@Expose
+private String closeDay;
+@SerializedName("dataStdDt")
+@Expose
+private String dataStdDt;
+@SerializedName("divisionNm")
+@Expose
+private String divisionNm;
+@SerializedName("dsignationDate")
+@Expose
+private String dsignationDate;
+@SerializedName("jibunAddr")
+@Expose
+private String jibunAddr;
+@SerializedName("lat")
+@Expose
+private String lat;
+@SerializedName("lng")
+@Expose
+private String lng;
+@SerializedName("orgNm")
+@Expose
+private String orgNm;
+@SerializedName("rnum")
+@Expose
+private Integer rnum;
+@SerializedName("saveTrgtAnimal")
+@Expose
+private String saveTrgtAnimal;
+@SerializedName("specsPersonCnt")
+@Expose
+private Integer specsPersonCnt;
+@SerializedName("vetPersonCnt")
+@Expose
+private Integer vetPersonCnt;
+@SerializedName("weekCellEtime")
+@Expose
+private String weekCellEtime;
+@SerializedName("weekCellStime")
+@Expose
+private String weekCellStime;
+@SerializedName("weekOprEtime")
+@Expose
+private String weekOprEtime;
+@SerializedName("weekOprStime")
+@Expose
+private String weekOprStime;
+@SerializedName("weekendCellEtime")
+@Expose
+private String weekendCellEtime;
+@SerializedName("weekendCellStime")
+@Expose
+private String weekendCellStime;
+@SerializedName("weekendOprEtime")
+@Expose
+private String weekendOprEtime;
+@SerializedName("weekendOprStime")
+@Expose
+private String weekendOprStime;
+@SerializedName("breedCnt")
+@Expose
+private Integer breedCnt;
+@SerializedName("feedCnt")
+@Expose
+private Integer feedCnt;
+@SerializedName("medicalCnt")
+@Expose
+private Integer medicalCnt;
+@SerializedName("quarabtineCnt")
+@Expose
+private Integer quarabtineCnt;
+@SerializedName("transCarCnt")
+@Expose
+private Integer transCarCnt;
+
+public String getCareAddr() {
+return careAddr;
+}
+
+public void setCareAddr(String careAddr) {
+this.careAddr = careAddr;
+}
+
+public String getCareNm() {
+return careNm;
+}
+
+public void setCareNm(String careNm) {
+this.careNm = careNm;
+}
+
+public String getCareTel() {
+return careTel;
+}
+
+public void setCareTel(String careTel) {
+this.careTel = careTel;
+}
+
+public String getCloseDay() {
+return closeDay;
+}
+
+public void setCloseDay(String closeDay) {
+this.closeDay = closeDay;
+}
+
+public String getDataStdDt() {
+return dataStdDt;
+}
+
+public void setDataStdDt(String dataStdDt) {
+this.dataStdDt = dataStdDt;
+}
+
+public String getDivisionNm() {
+return divisionNm;
+}
+
+public void setDivisionNm(String divisionNm) {
+this.divisionNm = divisionNm;
+}
+
+public String getDsignationDate() {
+return dsignationDate;
+}
+
+public void setDsignationDate(String dsignationDate) {
+this.dsignationDate = dsignationDate;
+}
+
+public String getJibunAddr() {
+return jibunAddr;
+}
+
+public void setJibunAddr(String jibunAddr) {
+this.jibunAddr = jibunAddr;
+}
+
+public String getLat() {
+return lat;
+}
+
+public void setLat(String lat) {
+this.lat = lat;
+}
+
+public String getLng() {
+return lng;
+}
+
+public void setLng(String lng) {
+this.lng = lng;
+}
+
+public String getOrgNm() {
+return orgNm;
+}
+
+public void setOrgNm(String orgNm) {
+this.orgNm = orgNm;
+}
+
+public Integer getRnum() {
+return rnum;
+}
+
+public void setRnum(Integer rnum) {
+this.rnum = rnum;
+}
+
+public String getSaveTrgtAnimal() {
+return saveTrgtAnimal;
+}
+
+public void setSaveTrgtAnimal(String saveTrgtAnimal) {
+this.saveTrgtAnimal = saveTrgtAnimal;
+}
+
+public Integer getSpecsPersonCnt() {
+return specsPersonCnt;
+}
+
+public void setSpecsPersonCnt(Integer specsPersonCnt) {
+this.specsPersonCnt = specsPersonCnt;
+}
+
+public Integer getVetPersonCnt() {
+return vetPersonCnt;
+}
+
+public void setVetPersonCnt(Integer vetPersonCnt) {
+this.vetPersonCnt = vetPersonCnt;
+}
+
+public String getWeekCellEtime() {
+return weekCellEtime;
+}
+
+public void setWeekCellEtime(String weekCellEtime) {
+this.weekCellEtime = weekCellEtime;
+}
+
+public String getWeekCellStime() {
+return weekCellStime;
+}
+
+public void setWeekCellStime(String weekCellStime) {
+this.weekCellStime = weekCellStime;
+}
+
+public String getWeekOprEtime() {
+return weekOprEtime;
+}
+
+public void setWeekOprEtime(String weekOprEtime) {
+this.weekOprEtime = weekOprEtime;
+}
+
+public String getWeekOprStime() {
+return weekOprStime;
+}
+
+public void setWeekOprStime(String weekOprStime) {
+this.weekOprStime = weekOprStime;
+}
+
+public String getWeekendCellEtime() {
+return weekendCellEtime;
+}
+
+public void setWeekendCellEtime(String weekendCellEtime) {
+this.weekendCellEtime = weekendCellEtime;
+}
+
+public String getWeekendCellStime() {
+return weekendCellStime;
+}
+
+public void setWeekendCellStime(String weekendCellStime) {
+this.weekendCellStime = weekendCellStime;
+}
+
+public String getWeekendOprEtime() {
+return weekendOprEtime;
+}
+
+public void setWeekendOprEtime(String weekendOprEtime) {
+this.weekendOprEtime = weekendOprEtime;
+}
+
+public String getWeekendOprStime() {
+return weekendOprStime;
+}
+
+public void setWeekendOprStime(String weekendOprStime) {
+this.weekendOprStime = weekendOprStime;
+}
+
+public Integer getBreedCnt() {
+return breedCnt;
+}
+
+public void setBreedCnt(Integer breedCnt) {
+this.breedCnt = breedCnt;
+}
+
+public Integer getFeedCnt() {
+return feedCnt;
+}
+
+public void setFeedCnt(Integer feedCnt) {
+this.feedCnt = feedCnt;
+}
+
+public Integer getMedicalCnt() {
+return medicalCnt;
+}
+
+public void setMedicalCnt(Integer medicalCnt) {
+this.medicalCnt = medicalCnt;
+}
+
+public Integer getQuarabtineCnt() {
+return quarabtineCnt;
+}
+
+public void setQuarabtineCnt(Integer quarabtineCnt) {
+this.quarabtineCnt = quarabtineCnt;
+}
+
+public Integer getTransCarCnt() {
+return transCarCnt;
+}
+
+public void setTransCarCnt(Integer transCarCnt) {
+this.transCarCnt = transCarCnt;
+}
+
+}
+-----------------------------------com.example.Items.java-----------------------------------
+
+package com.example;
+
+import java.util.List;
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("jsonschema2pojo")
+public class Items {
+
+@SerializedName("item")
+@Expose
+private List<Item> item = null;
+
+public List<Item> getItem() {
+return item;
+}
+
+public void setItem(List<Item> item) {
+this.item = item;
+}
+
+}
+-----------------------------------com.example.Response.java-----------------------------------
+
+package com.example;
+
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("jsonschema2pojo")
+public class Response {
+
+@SerializedName("header")
+@Expose
+private Header header;
+@SerializedName("body")
+@Expose
+private Body body;
+
+public Header getHeader() {
+return header;
+}
+
+public void setHeader(Header header) {
+this.header = header;
+}
+
+public Body getBody() {
+return body;
+}
+
+public void setBody(Body body) {
+this.body = body;
+}
+
+}

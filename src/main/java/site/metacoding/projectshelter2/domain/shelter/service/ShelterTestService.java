@@ -28,8 +28,7 @@ public class ShelterTestService {
             String key = "dmJX28HnrA9wKS9yRoXl2w9PhaYnhACCIE2AAh8TKcT0ouSflLuIbW3bxjjOcQVe2gCh9tClrm3bEdBorWN2pw%3D%3D";
             URI uri = new URI(
                     "http://openapi.animal.go.kr/openapi/service/rest/animalShelterSrvc/shelterInfo?&ServiceKey="
-                            + key +
-                            "&_type=JSON");
+                            + key);
             RestTemplate restTemplate = new RestTemplate();
 
             ShelterResponseDto response = restTemplate.getForObject(uri, ShelterResponseDto.class);

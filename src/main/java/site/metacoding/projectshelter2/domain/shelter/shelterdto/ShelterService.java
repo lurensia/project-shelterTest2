@@ -33,6 +33,7 @@ public class ShelterService {
             sb.append(
                     "dmJX28HnrA9wKS9yRoXl2w9PhaYnhACCIE2AAh8TKcT0ouSflLuIbW3bxjjOcQVe2gCh9tClrm3bEdBorWN2pw%3D%3D");
             sb.append("&_type=json");
+
             URL url = new URL(sb.toString());
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -52,7 +53,9 @@ public class ShelterService {
             }
             Gson gson = new Gson();
             Shelter responseDto = gson.fromJson(responseJson.toString(), Shelter.class);
+
             System.out.println(responseDto.getResponse().getBody().getItems().getItem().size());
+
             List<Item> result = responseDto.getResponse().getBody().getItems().getItem();
             for (int i = 0; i < result.size(); i++) {
                 ShelterDto items = new ShelterDto(
@@ -94,6 +97,7 @@ public class ShelterService {
         }
         List<ShelterDto> shelterEntity = repository.saveAll(shelterList);
         System.out.println("받은 엔티티 = " + shelterEntity);
+
         return null;
     }
 }

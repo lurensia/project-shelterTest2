@@ -1,0 +1,9 @@
+{{#weekOprStime}}{{weekOprStime}}{{/weekOprStime}}{{^weekOprStime}}''{{/weekOprStime}}
+{{#weekOprEtime}}{{weekOprEtime}}{{/weekOprEtime}}{{^weekOprEtime}}''{{/weekOprEtime}}
+{{#weekCellStime}}{{weekCellStime}}{{/weekCellStime}}{{^weekCellStime}}''{{/weekCellStime}}
+{{#weekCellEtime}}{{weekCellEtime}}{{/weekCellEtime}}{{^weekCellEtime}}''{{/weekCellEtime}}
+{{#weekendCellStime}}{{weekendCellStime}}{{/weekendCellStime}}{{^weekendCellStime}}''{{/weekendCellStime}}
+{{#weekendCellEtime}}{{weekendCellEtime}}{{/weekendCellEtime}}{{^weekendCellEtime}}''{{/weekendCellEtime}}
+{{#weekendOprStime}}{{weekendOprStime}}{{/weekendOprStime}}{{^weekendOprStime}}''{{/weekendOprStime}}
+{{#weekendOprEtime}}{{weekendOprEtime}}{{/weekendOprEtime}}{{^weekendOprEtime}}''{{/weekendOprEtime}}
+{{#closeDay}}{{closeDay}}{{/closeDay}}{{^closeDay}}''{{/closeDay}}
