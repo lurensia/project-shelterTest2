@@ -25,6 +25,7 @@ public class ShelterTestService {
         List<ShelterTestDto> lists = new ArrayList<>();
 
         try {
+
             String key = "dmJX28HnrA9wKS9yRoXl2w9PhaYnhACCIE2AAh8TKcT0ouSflLuIbW3bxjjOcQVe2gCh9tClrm3bEdBorWN2pw%3D%3D";
             URI uri = new URI(
                     "http://openapi.animal.go.kr/openapi/service/rest/animalShelterSrvc/shelterInfo?&ServiceKey="
@@ -35,17 +36,27 @@ public class ShelterTestService {
 
             System.out.println(response);
 
-            int respon = response.getResponse().getBody().getItems().getItem().size();
+            // int respon = response.getResponse().getBody().getItems().getItem().size();
+
+            int totalCount = response.getResponse().getBody().getTotalCount();
 
             List<ShelterResponseDto> shelterList = new ArrayList<>();
 
-            for (int i = 0; i < respon; i++) {
+            key = "dmJX28HnrA9wKS9yRoXl2w9PhaYnhACCIE2AAh8TKcT0ouSflLuIbW3bxjjOcQVe2gCh9tClrm3bEdBorWN2pw%3D%3D";
+            uri = new URI(
+                    "http://openapi.animal.go.kr/openapi/service/rest/animalShelterSrvc/shelterInfo?&ServiceKey="
+                            + key + "&numOfRows=" + totalCount);
+            restTemplate = new RestTemplate();
+
+            response = restTemplate.getForObject(uri, ShelterResponseDto.class);
+
+            for (int i = 0; i < response.getResponse().getBody().getItems().getItem().size(); i++) {
                 shelterList.add(response);
             }
 
             System.out.println(shelterList);
 
-            for (int i = 0; i < shelterList.size(); i++) {
+            for (int i = 0; i < totalCount; i++) {
                 ShelterTestDto result = new ShelterTestDto(
                         i,
                         shelterList.get(i).getResponse().getBody().getItems().getItem().get(i).getCareNm(),
